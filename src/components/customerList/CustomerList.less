@@ -1,0 +1,93 @@
+:global{
+	.am-search{
+	    padding: 9px 15px 0px 15px;
+	}
+	.am-search .am-search-input{
+		border-radius: 21px;
+		height: 37px;
+		border: 1px solid #eee;
+	}
+	.am-search .am-search-input .am-search-clear{
+		top: 3px;
+	}
+}
+
+/*.custoList{
+	width: 100%;
+	height: 100%;
+}*/
+.custoTotal{
+	margin: 7px 0;
+	font-size: 15px;
+    padding: 3px 0 0px 11px;
+    font-family: '微软雅黑';
+	span{
+		color: #cc3333; 
+	}
+}
+.listHeader{
+    height: 6vh;
+    line-height: 6vh;
+    background-color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+.userList{
+	height: 81%;
+	overflow: auto;
+    margin: 0; 
+}
+
+.list{
+	display: flex;
+	font-family: '微软雅黑';
+	margin-bottom: 2px;
+	padding: 10px 4px 10px 10px;
+	.head{
+		flex:1;
+		div{
+			width: 4rem;
+			height: 4rem;
+			border: 1px solid #ccc;
+			border-radius: 50%;	
+			overflow: hidden;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}	
+	}
+	.details{
+		flex:3;
+		color: #999999;
+		position: relative;
+		.uesrInfo,.moneyInfo{
+			position: absolute;
+		    width: 100%;
+		    right: 0;
+			p{
+			    margin: 12px 0;
+    			font-size: 14px;
+    			display: inline-block;
+			}
+			p:last-child{
+				float: right;
+				padding-right: 8px;
+			}
+		}
+		.uesrInfo p:first-child span{
+			color: #333333;
+		}
+		.moneyInfo{
+			top: 26px;
+			span{
+				color: #cc3333;
+			}
+		}
+	}
+}
+.footer{
+	 padding: 30px;
+	 text-align: center;
+	 color: #ccc; 
+}

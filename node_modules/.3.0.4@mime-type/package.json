@@ -1,0 +1,53 @@
+{
+  "name": "mime-type",
+  "description": "the custom more powerful mime-type utility can work with mime-db.",
+  "version": "3.0.4",
+  "contributors": [
+    "Riceball LEE https://github.com/snowyu",
+    "Douglas Christopher Wilson <doug@somethingdoug.com>",
+    "Jeremiah Senkpiel <fishrock123@rocketmail.com> (https://searchbeam.jit.su)",
+    "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "mime",
+    "mime-db",
+    "types"
+  ],
+  "repository": "snowyu/mime-type.js",
+  "dependencies": {
+    "media-typer": "^0.3.0",
+    "minimatch": "^2.0.8",
+    "path.js": "^1.0.4",
+    "util-ex": "^0.3.4"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.3",
+    "istanbul": "0.3.16",
+    "mime-db": "^1.14.0",
+    "mocha": "~1.21.5",
+    "pre-commit": "^1.0.10"
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "files": [
+    "HISTORY.md",
+    "LICENSE",
+    "lib",
+    "src",
+    "with-db.js",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">= 0.6"
+  },
+  "scripts": {
+    "pretest": "node_modules/.bin/coffee -o lib -c src/*.coffee",
+    "test": "mocha --reporter spec test/test.js",
+    "test-cov": "npm run pretest; istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot test/test.js",
+    "test-travis": "npm run pretest; istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot test/test.js"
+  },
+  "_from": "mime-type@3.0.4",
+  "_resolved": "http://registry.npm.taobao.org/mime-type/download/mime-type-3.0.4.tgz"
+}
